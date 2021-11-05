@@ -1,0 +1,14 @@
+<mat-toolbar color="primary"> My Weather App </mat-toolbar>
+<div class="content">
+  <div class="flex-row">
+    <mat-form-field appearance="fill">
+      <mat-label> Please Enter City </mat-label>
+      <input matInput [formControl]="cityTextControl"  />
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="getWeatherInfo()" class="align-button">
+      GET WEATHER INFO
+    </button>
+  </div>
+  <br />
+  <router-outlet></router-outlet>
+</div>
